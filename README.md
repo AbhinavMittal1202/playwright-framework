@@ -8,12 +8,15 @@ A production-grade test automation framework built with Playwright and TypeScrip
 - Node.js
 
 ## Framework Structure
+
+```
 playwright-framework/
 ├── pages/          # Page Object classes
 ├── tests/e2e/      # Test specs
 ├── test-data/      # Test data
 ├── utils/          # Helper functions
 └── playwright.config.ts
+```
 
 ## Design Decisions
 - **Page Object Model** — locators and actions separated from test logic

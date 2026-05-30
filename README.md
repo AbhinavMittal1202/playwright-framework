@@ -26,16 +26,24 @@ playwright-framework/
 ## How to Run
 
 ### Install dependencies
+```bash
 npm install
+```
 
 ### Install browsers
+```bash
 npx playwright install
+```
 
 ### Run all tests
+```bash
 npx playwright test
+```
 
 ### View report
+```bash
 npx playwright show-report
+```
 
 ## Author
 Abhinav Mittal — Senior SDET

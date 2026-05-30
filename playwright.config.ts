@@ -1,4 +1,8 @@
 import { defineConfig, devices } from '@playwright/test'
+import dotenv from 'dotenv'
+
+// Load environment variables from .env file
+dotenv.config()
 
 declare const process: any
 
@@ -11,8 +15,8 @@ export default defineConfig({
   reporter: 'html',
 
   use: {
-    // We'll use OrangeHRM as our test application
-    baseURL: 'https://opensource-demo.orangehrmlive.com',
+    // Read base URL from environment variable, fallback to OrangeHRM demo if not set
+    baseURL: process.env.BASE_URL || 'https://opensource-demo.orangehrmlive.com/',
 
     // Always take screenshot on failure — helps debug
     screenshot: 'only-on-failure',

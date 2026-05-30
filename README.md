@@ -1,5 +1,5 @@
 # Playwright Framework
-
+![Playwright Tests](https://github.com/AbhinavMittal1202/playwright-framework/actions/workflows/playwright.yml/badge.svg)
 A production-grade test automation framework built with Playwright and TypeScript.
 
 ## Tech Stack
